@@ -8,6 +8,9 @@ body {
 }
 
 /* Navbar */
+#navbar{
+  z-index:50;
+}
 .nav-link {
   position: relative;
   font-weight: 500;
