@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohan Roy | Web Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gradient-to-r from-gray-900 to-gray-800 text-white font-sans">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-10 transition-all duration-300">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold">
+          <span class="text-blue-400">R</span>ohan<span class="text-blue-400"
+            >.</span
+          >
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-gray-800 py-4">
+        <div class="container mx-auto px-6 flex flex-col space-y-4">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#skills" class="mobile-nav-link">Skills</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
+      <div class="absolute inset-0 z-10">
+        <div id="particles-js" class="absolute inset-0"></div>
+      </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 space-y-6">
+            <h2 class="text-blue-400 text-xl font-medium">HELLO, I'M</h2>
+            <h1 class="text-4xl md:text-6xl font-bold">Rohan Roy</h1>
+            <h3 class="text-xl md:text-2xl text-gray-300">
+              <span id="typewriter" class="text-blue-400 font-medium"></span>
+            </h3>
+            <p class="text-gray-400 md:max-w-lg">
+              Enthusiastic web developer skilled in HTML, CSS, ReactJS, MongoDB,
+              and Express.js, eager to contribute to innovative projects while
+              enhancing my technical expertise.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#contact" class="btn-primary"> Contact Me </a>
+              <a href="#projects" class="btn-secondary"> See My Work </a>
+            </div>
+            <div class="flex space-x-4 pt-4">
+              <a href="https://github.com/realrohanroy" class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rohan-roy-32623330a/"
+                class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rohanroy.2/"
+                class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="mailto:rohanrajeshroy24@gmail.com" class="social-icon"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+            <div class="hero-image-container">
+              <img
+                src="/assets/1740748362816.jpeg"
+                alt="Rohan Roy"
+                class="rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#about">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="scroll-arrow"></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+      <div class="container mx-auto px-6">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="flex flex-col md:flex-row mt-12">
+          <div class="md:w-1/2 flex justify-center">
+            <div class="about-image-container">
+              <img
+                src="/assets/about.JPG"
+                alt="About Me"
+                class="rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="md:w-1/2 mt-10 md:mt-0 space-y-6 space-x-4">
+            <h3 class="text-2xl font-semibold">Who am I?</h3>
+            <p class="text-gray-300">
+              I am a passionate web developer currently pursuing my Bachelor's
+              degree in Information Technology. With expertise in modern web
+              technologies, I strive to create efficient, user-centric solutions
+              that deliver exceptional experiences.
+            </p>
+            <p class="text-gray-300">
+              My journey in technology has been driven by a curiosity to solve
+              problems and build innovative applications. I'm committed to
+              continuous learning and staying up-to-date with the latest
+              industry trends.
+            </p>
+            <div class="mt-8">
+              <a href="#" class="btn-primary">
+                <i class="fas fa-download mr-2"></i> Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What I'm Learning</span>
+          <h2 class="section-title">My Tech Stack</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="language">Languages</button>
+          <button class="filter-btn" data-filter="framework">Frameworks</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card" data-category="frontend language">
+            <div class="skill-header">
+              <i class="fab fa-html5" aria-hidden="true"></i>
+              <h3>HTML5</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="90">
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">2+ years</span>
+                <p>Semantic markup, Forms, Basic SEO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <i class="fab fa-css3-alt" aria-hidden="true"></i>
+              <h3>CSS3</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="85">
+                  <span class="skill-percent">85%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">2+ years</span>
+                <p>Flexbox, Grid, Responsive design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend language">
+            <div class="skill-header">
+              <i class="fab fa-js" aria-hidden="true"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="80">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">1.5+ years</span>
+                <p>ES6, DOM manipulation, Async/Await</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend framework">
+            <div class="skill-header">
+              <i class="fab fa-react" aria-hidden="true"></i>
+              <h3>ReactJS</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="75">
+                  <span class="skill-percent">60%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">8+ months</span>
+                <p>Hooks, Components, React Router</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <i class="fab fa-node-js" aria-hidden="true"></i>
+              <h3>Node.js</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="70">
+                  <span class="skill-percent">60%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">8+ months</span>
+                <p>Server creation, NPM, APIs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="framework backend">
+            <div class="skill-header">
+              <i class="fab fa-node-js" aria-hidden="true"></i>
+              <h3>Express.js</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="65">
+                  <span class="skill-percent">65%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">8+ months</span>
+                <p>RESTful routes, Middleware, APIs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-card" data-category="language">
+            <div class="skill-header">
+              <i class="fab fa-python" aria-hidden="true"></i>
+              <h3>Python</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="60">
+                  <span class="skill-percent">70%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">2+ year</span>
+                <p>Data analysis, Data structures, Machine Learning</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="language">
+            <div class="skill-header">
+              <i class="fab fa-c" aria-hidden="true"></i>
+              <h3>C++</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="55">
+                  <span class="skill-percent">55%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">1+ year</span>
+                <p>OOP concepts, STL, Data structures</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks -->
+          <div class="skill-card" data-category="framework backend">
+            <div class="skill-header">
+              <i class="fab fa-python" aria-hidden="true"></i>
+              <h3>Django</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="50">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">3+ months</span>
+                <p>MVT pattern, Admin panel, Models</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="framework">
+            <div class="skill-header">
+              <i class="fas fa-server" aria-hidden="true"></i>
+              <h3>MERN Stack</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-level">
+                <div class="skill-progress" data-level="65">
+                  <span class="skill-percent">65%</span>
+                </div>
+              </div>
+              <div class="skill-details">
+                <span class="experience">7+ months</span>
+                <p>Full-stack apps, REST APIs, Auth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="section-header">
+          <h2 class="section-title">My Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://api.placeholder.com/400/320"
+                alt="ParKar Project"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">ParKar</h3>
+              <p class="project-description">
+                This is Airbnb of Parkings. A platform that connects people with
+                parking spaces to those who need them.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="project-date">Nov 2024 - Present</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://api.placeholder.com/400/320"
+                alt="KaboomJS Game"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">KaboomJS Game Dev</h3>
+              <p class="project-description">
+                Created a small game using Kaboom.js framework, gained
+                comprehensive understanding of the framework.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">KaboomJS</span>
+                <span class="tech-tag">HTML5</span>
+              </div>
+              <div class="project-date">Mar 2024 - Apr 2024</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://api.placeholder.com/400/320"
+                alt="Plant Disease Detection"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Plant Disease Detection</h3>
+              <p class="project-description">
+                Trained a ML model using KNN to identify and predict among 21
+                diseases of specific plants with 91%+ accuracy.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">KNN</span>
+              </div>
+              <div class="project-date">Mar 2023 - Apr 2023</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://api.placeholder.com/400/320"
+                alt="Plant Disease Detection"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Plant Disease Detection</h3>
+              <p class="project-description">
+                Trained a ML model using KNN to identify and predict among 21
+                diseases of specific plants with 91%+ accuracy.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">KNN</span>
+              </div>
+              <div class="project-date">Mar 2023 - Apr 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="section-header">
+          <h2 class="section-title">Testimonials</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div class="testimonial-card">
+            <p class="text-gray-300">
+              "Rohan is an exceptional developer who consistently delivers
+              high-quality work. His attention to detail is impressive!"
+            </p>
+            <h4 class="text-blue-400 font-semibold">- Client Name</h4>
+          </div>
+          <div class="testimonial-card">
+            <p class="text-gray-300">
+              "Working with Rohan was a pleasure. He is dedicated,
+              knowledgeable, and always willing to help!"
+            </p>
+            <h4 class="text-blue-400 font-semibold">- Colleague Name</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+          <div>
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold">
+                Let's Talk About Your Project!
+              </h3>
+              <p class="text-gray-300">
+                Feel free to reach out to me for collaboration, job
+                opportunities, or just to say hello!
+              </p>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 class="contact-title">Email</h4>
+                    <p class="contact-detail">rohanrajeshroy24@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <h4 class="contact-title">Phone</h4>
+                    <p class="contact-detail">+91 7249775842</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="contact-title">Location</h4>
+                    <p class="contact-detail">Pune, India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-4 pt-4">
+                <a href="https://github.com/realrohanroy" class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/rohan-roy-32623330a/"
+                  class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/rohanroy.2/"
+                  class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="mailto:rohanrajeshroy24@gmail.com" class="social-icon"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form id="contact-form" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    class="form-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Subject"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  class="form-input"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full">
+                Send Message <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <a href="#" class="text-2xl font-bold mb-6 inline-block">
+            <span class="text-blue-400">R</span>ohan<span class="text-blue-400"
+              >.</span
+            >
+          </a>
+          <div class="flex justify-center space-x-4 my-6">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:rohanrajeshroy24@gmail.com" class="social-icon"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <p class="text-gray-400">
+            &copy; 2025 Rohan Roy. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
